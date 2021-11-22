@@ -394,8 +394,13 @@ p{
     
     /*Section Portfolio*/
     
-
-    
+    .card{
+        width: 95%;
+        height: 150px;
+    }
+    .info{
+        top: 0;
+    }
 }
 
 
