@@ -12,6 +12,7 @@ window.addEventListener("scroll" , ()=>{
         document.querySelector('.home-nav').removeAttribute('id', 'active')
         document.querySelector('.portfolio-nav').removeAttribute('id', 'active')
         document.querySelector('.contact-nav').removeAttribute('id', 'active')
+
     }
 
     else if(portfolio.offsetTop <= scroll && contact.offsetTop > scroll){

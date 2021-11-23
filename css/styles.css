@@ -9,6 +9,7 @@
     --first-color: #32E0C4;
     --secondary: #0D7377;
     --dark: #212121;
+    --dark-transparent: #212121e8;
     --background: #EEEEEE;
     
 }
@@ -31,7 +32,7 @@ main{
     background-position-x: center;
 }
 section{
-    min-height: 110vh;   
+    min-height: 115vh;   
 }
 h1{
     font-family: 'Merriweather', serif;
@@ -144,6 +145,7 @@ i{
 .item-nav a{
     text-decoration: none;
     font-size: 15px;
+    font-weight: 400;
     color: var(--dark);
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -412,11 +414,18 @@ p{
 
 @media(max-width: 576px){ /* Small Breakpoint */
    /*Navbar*/
+   .item-nav:hover::after{
+    transform:scaleX(0) ;
+    -webkit-transform:scaleX(0) ;
+    -moz-transform:scaleX(0) ;
+    -ms-transform:scaleX(0) ;
+    -o-transform:scaleX(0) ;
+}
    .nav-header{
        inset: 0 0 0 30%;
        flex-direction: column;
        padding: 1rem 3rem;
-       background-color: var(--dark);
+       background-color: var(--dark-transparent);
        transform: translateX(100%);
        -webkit-transform: translateX(100%);
        -moz-transform: translateX(100%);
@@ -442,7 +451,7 @@ p{
    /*button navbar*/
    .mobile-nav-toggle{
        display: block;
-        position: absolute;
+        position: fixed;
         z-index: 9999;
         background-color: transparent;
         background: url('../img/icon-hamburger.svg');
@@ -459,7 +468,7 @@ p{
    
     /*Section about me */
     .section-about{
-        margin-top: 10rem ;
+        padding: 10rem 0 ;
     }
     
     .section-about p{
