@@ -212,7 +212,11 @@ i{
     bottom: 0;
     left: 50%;
     padding: 3rem;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
+
 
 /*section about*/
 
@@ -471,5 +475,10 @@ p{
     }
 }
 
+@keyframes arrow {
+    0%{bottom: 1rem;}
+    50%{bottom: 0}
+    100%{bottom: 1rem;}
+}
 
 
