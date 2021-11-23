@@ -210,7 +210,9 @@ i{
 .arrow-expand{
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
     padding: 3rem;
     animation-name: arrow;
     animation-duration: 1.5s;
