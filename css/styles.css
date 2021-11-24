@@ -31,9 +31,7 @@ main{
     background-size: cover;
     background-position-x: center;
 }
-section{
-    min-height: 115vh;   
-}
+
 h1{
     font-family: 'Merriweather', serif;
     
@@ -528,6 +526,9 @@ footer{
     .icons-contact i{
         font-size: 3.8rem;
         color: var(--secondary);
+    }
+    .icons-contact{
+        margin: 4rem;
     }
 
     
