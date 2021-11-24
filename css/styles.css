@@ -277,7 +277,7 @@ p{
     text-align: center;
     font-size: 3rem;
 }
-.cards-row{
+.cards-row-3{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -288,7 +288,7 @@ p{
     position: relative;
     background-color: var(--background);
     box-shadow: 5px 5px 4px rgba(128, 127, 127, 0.959);
-    width: 300px;
+    width: 400px;
     height: 250px;
     margin: 2rem auto;
     transition: 0.3s;
@@ -388,9 +388,19 @@ p{
 }
 
 
+/*footer*/
 
+footer{
+    background-color: var(--dark);
+    height: 10rem;
+    width: 100%;
+}
 
-
+@media (min-width: 1600px) {
+    .card{
+        width: 45%;
+    }
+}
 @media(max-width: 992px){ /* Long Breakpoint */
     .section-about img{
         display: none;
@@ -409,6 +419,9 @@ p{
     
     p{
         font-size: 2rem;
+    }
+    .card{
+        width: 40%;
     }
 }
 
@@ -465,7 +478,16 @@ p{
 .mobile-nav-toggle[aria-expanded="true"]{
     background-image: url("../img/icon-close.svg");
 }
-   
+
+    /*title*/
+
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
     /*Section about me */
     .section-about{
         padding: 10rem 0 ;
@@ -484,7 +506,33 @@ p{
     .info{
         top: 0;
     }
+    /*Contact section*/
+    .contact-section{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .primary-btn{
+        height: fit-content;
+        margin: 5rem auto 2rem;
+        background: none;
+        border: none;
+        font-size: 25px;
+        font-weight: 400;
+        
 }
+
+    
+
+    .icons-contact i{
+        font-size: 3.8rem;
+        color: var(--secondary);
+    }
+
+    
+}
+
 
 @keyframes arrow {
     0%{bottom: 1rem;}
