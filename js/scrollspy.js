@@ -23,7 +23,7 @@ window.addEventListener("scroll" , ()=>{
         document.querySelector('.contact-nav').removeAttribute('id', 'active')
     }
 
-    else if(contact.offsetTop <= scroll ){
+    else if(1950.6666259765625<=scroll  ){
         console.log('contact')
         document.querySelector('.contact-nav').setAttribute('id', 'active')
         document.querySelector('.home-nav').removeAttribute('id', 'active')
@@ -38,4 +38,5 @@ window.addEventListener("scroll" , ()=>{
         document.querySelector('.portfolio-nav').removeAttribute('id', 'active')
         document.querySelector('.contact-nav').removeAttribute('id', 'active')
     }
+    
 })
